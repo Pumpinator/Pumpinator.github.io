@@ -1,0 +1,67 @@
+<main>
+    <div>
+    
+      <h3 class="text-center pb-2">Nuevo Pedido</h3>
+    <div class="container bg-body-tertiary">
+      <div class="row pt-3 p-5 mb-4">
+          <div class="col-md-6" >
+              <div class="row input-group mb-3">
+                <label for="input-suc" class="col"><strong>Sucursal:</strong></label>
+                <input type="text" id="input-suc" class="col form-control" value="Sucursal A" disabled>
+              </div>
+              <div class="row input-group mb-3">
+                <label for="inputCiudad" class="col"><strong>Ciudad:</strong></label>
+                <input type="text" id="inputCiudad" class="col form-control" value="Ciudad Uno" disabled>
+              </div>
+              <div class="row input-group mb-3">
+                <label for="inputEstado" class="col"><strong>Estado:</strong></label>
+                <input type="text" id="inputEstado" class="col form-control" value="Estado Uno" disabled>
+              </div>
+              <div class="row input-group mb-3">
+                <label for="inputCp" class="col"><strong>Codigo Postal:</strong></label>
+                <input type="text" id="inputCp" class="col form-control" value="12345" disabled>
+              </div>
+              <div class="row input-group mb-3">
+                <label for="inputEmpleado" class="col"><strong>Empleado:</strong></label>
+                <input type="text" id="inputEmpleado" class="col form-control" value="Hugo Rios" disabled>
+              </div>
+              <div class="row input-group mb-3">
+                <label for="input-total" class="col"><strong>Producto:</strong></label>
+                <input type="text" id="input-total" class="col form-control" >
+              </div>
+              <div class="row input-group mb-3">
+                <label for="input-idEmpleado" class="col"><strong>Cantidad:</strong></label>
+                <input type="text" id="input-idEmpleado" class="col form-control" >
+              </div>  
+              
+          </div>
+          <div class="col-md-6">
+            <div class="row input-group mb-3">
+                <label for="input-fechaHora" class="col"><strong>Fecha y Hora:</strong></label>
+                <input type="text" id="input-fechaHora" class="col form-control">
+            </div>            
+            <button onclick="mostrarFechaActualEnCampo()">Obtener Fecha Actual</button>
+        </div>  
+          
+              <!-- botones -->
+              <!-- AGREGAR -->
+    
+              <br><br><br><br><br>
+                    <div class="col my-2" >
+                      <button type="button" class="btn btn-success btn-lg w-100"  onclick="agregarRegistro()">Solicitar </button>
+                    </div>
+                    <div class="col  text-end my-1" >
+                      <button type="button" class="btn btn-secondary btn-lg w-100" onclick="cargarContenido('pedidoPorSucursal.html')">Cancelar</button>
+                    </div>
+    
+                <!-- CANCELAR -->
+                
+          </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    </main>
+    
+    

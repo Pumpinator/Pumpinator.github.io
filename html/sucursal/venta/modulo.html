@@ -1,0 +1,36 @@
+<h2 class="text-center pb-2">Módulo de ventas</h2>
+<div class="container pt-3 p-3 mb-4 bg-body-tertiary rounded-3">
+    <div class="row">
+        <div class="col col-xxl">
+            <label class="mb-1" for="txtVentaBuscar"><strong>Búsqueda general:</strong></label>
+            <input class="form-control" type="text" id="txtVentaBuscar" name="txtVentaBuscar"
+                   placeholder="Buscar venta por cualquier campo">
+        </div>
+        <div class="col col-md-auto text-end pt-4">
+            <button type="button" class="btn btn-success">Buscar</button>
+        </div>
+    </div>
+</div>
+<div class="container pt-3 p-3 mb-4 bg-body-tertiary rounded-3">
+    <table class="table table-sm">
+        <thead>
+            <tr class="text-center">
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Cliente</th>
+                <th>Vendedor</th>
+                <th>Descripción</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tablaVentas">
+        </tbody>
+    </table>
+</div>
+<div id="detallesVentaContainer" class="container pt-3 p-3 mb-4 bg-body-tertiary rounded-3">
+    
+</div>
+<div class="col text-center pb-5">
+    <button onclick="cargarAgregarVenta();" class="btn btn-success w-50">Nueva venta</button>
+</div>

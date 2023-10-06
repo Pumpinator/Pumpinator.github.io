@@ -1,0 +1,49 @@
+<h1 class="text-center pb-2"><b>Módulo de inventario</b></h1>
+<br>
+<!-- buscarInventario -->
+<div class="contenedor" style="padding: 25px;">
+    <div class="row">
+        <div class="col">
+            <label class="mb-1" for="selSucursal"><strong>Filtrar registros por</strong></label>
+            <select class="form-select box" id="selSucursal" name="selSucursal">
+
+                <option value="" <option value="SICEFA Central">Todos</option> <!-- Placeholder --> >Todos</option>
+                <!-- Placeholder -->
+                <option value="" disabled>-- Sucursales --</option> <!-- Placeholder -->
+                <option value="1">Centro</option>
+                <option value="2">Centro Max</option>
+                <option value="3">Plaza Mayor</option>
+                <option value="4">Sicefa Central</option>
+
+            </select>
+        </div>
+        <div class="col">
+            <label class="mb-1" for="txtConsultarInventario"><strong>Consultar inventario</strong></label>
+            <input class="form-control box" type="text" name="txtBusquedaInventario"
+                placeholder="Introducir términos de búsqueda">
+        </div>
+        <div class="col text-end pt-4">
+
+            <button class="botonBuscar" type="button" id="txtConsultarInventario" placeholder="Buscar"
+                onclick="buscarInventario()">Buscar</button>
+        </div>
+    </div>
+</div><br>
+<h1 class="text-center pb-2"><b>Inventario de sucursales</b></h1><br>
+<div class="contenedor_consulta">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Sucursal</th>
+                <th scope="col">Nombre producto</th>
+                <th scope="col">Nombre genérico</th>
+                <th scope="col">Cantidad en sucursal</th>
+                <th scope="col">Precio compra</th>
+                <th scope="col">Precio venta</th>
+                <th scope="col">Forma farmaceútica</th>
+            </tr>
+        </thead>
+        <tbody id="consultaInventarios">
+        </tbody>
+    </table>
+</div>

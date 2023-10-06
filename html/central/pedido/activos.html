@@ -1,0 +1,93 @@
+<div class="container my-5">
+    <div class="table-responsive small">
+
+        <div class="container pt-3 p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="row">
+                <div class="col">
+                    <label class="mb-1" for="campo-busqueda"><strong>Buscar:</strong></label>
+                    <input class="form-control" type="text" id="txtBuscarPedido" name="campo-busqueda"
+                        placeholder="Buscar">
+                </div>
+                <div class="col text-end pt-4">
+                    <button onclick="buscarPedido()" type="button" class="btn btn-warning"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 5rem; --bs-btn-font-size: 1rem;">Buscar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-check form-switch form-check-reverse">
+            <input class="form-check-input" type="checkbox" id="filtro-estatus" onchange="mostrarRegistrosPedido()">
+            <label class="form-check-label" for="filtro-estatus">Pendientes</label>
+        </div>
+
+        <div class="table-scroll">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Sucursal</th>
+                        <th scope="col">Fecha y Hora</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Estatus</th>
+                        <th scope="col">Id de Empleado</th>
+                        <th scope="col">Detalles</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaPedido">
+                </tbody>
+            </table>
+        </div>
+        <br><br><br>
+        <!-- BLOQUE DE DATOS -->
+        <div id="pedidoCentral" class="container pt-3 p-5 mb-4 custom-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row input-group mb-3">
+                        <label for="input-id" class="col"><strong>id de Pedido:</strong></label>
+                        <input type="text" id="input-id" class="col form-control" disabled>
+                    </div>
+                    <div class="row input-group mb-3">
+                        <label for="input-suc" class="col"><strong>Sucursal:</strong></label>
+                        <input type="text" id="input-suc" class="col form-control" disabled>
+                    </div>
+                    <div class="row input-group mb-3">
+                        <label for="input-fechaHora" class="col"><strong>Fecha y Hora:</strong></label>
+                        <input type="text" id="input-fechaHora" class="col form-control" disabled>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row input-group mb-3">
+                        <label for="input-total" class="col"><strong>Total:</strong></label>
+                        <input type="text" id="input-total" class="col form-control" disabled>
+                    </div>
+                    <div class="row input-group mb-3">
+                        <label for="input-idEmpleado" class="col"><strong>Id de Empleado:</strong></label>
+                        <input type="text" id="input-idEmpleado" class="col form-control" disabled>
+                    </div>
+                    <div class="row input-group mb-3">
+                        <label for="input-estatus" class="col"><strong>Estatus:</strong></label>
+                        <input type="text" id="input-estatus" class="col form-control" disabled>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row input-group mb-3">
+                        <label for="input-idProducto1" class="col"><strong>ID Producto:</strong></label>
+                        <input type="text" id="input-idProducto1" class="col form-control" disabled>
+                    </div>
+                    <div class="row input-group mb-3">
+                        <label for="input-precioProducto1" class="col"><strong>Precio Producto:</strong></label>
+                        <input type="text" id="input-precioProducto1" class="col form-control" disabled>
+                    </div>
+                    <div class="row input-group mb-3">
+                        <label for="input-cantidadProducto1" class="col"><strong>Cantidad Producto:</strong></label>
+                        <input type="text" id="input-cantidadProducto1" class="col form-control" disabled>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+            <button type="button" class="btn btn-warning btn-lg w-100" onclick="despacharPedido()">Atender</button>
+
+        </div>
+    </div>

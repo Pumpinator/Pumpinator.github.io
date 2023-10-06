@@ -1,0 +1,100 @@
+<h1 class="text-center pb-2"><b>Agregar Producto</b></h1>
+<div class="contenedor">
+    <div class="row pt-2 p-2 mb-2">
+        <div class="col-md-6">
+            <!-- Primer columna -- Variables -->
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtID"><strong>ID:</strong></label>
+                <input class="form-control box" type="text" id="txtID" name="txtID"
+                    placeholder="ID generado automáticamente" disabled>
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtNombreProducto"><strong>Nombre de producto:</strong></label>
+                <input class="form-control box" type="text" id="txtNombreProducto" name="txtNombreProducto"
+                    placeholder="Nombre">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtNombreGenerico"><strong>Nombre genérico:</strong></label>
+                <input class="form-control box" type="text" id="txtNombreGenerico" name="txtNombreGenerico"
+                    placeholder="Nombre">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtFormaFarmaceutica"><strong>Forma farmaceútica:</strong></label>
+                <input class="form-control box" type="text" id="txtFormaFarmaceutica" name="txtFormaFarmaceutica"
+                    placeholder="Forma farmaceútica">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtUnidadesDeMedida"><strong>Unidades de medida:</strong></label>
+                <input class="form-control box" type="text" id="txtUnidadesDeMedida" name="txtUnidadesDeMedida"
+                    placeholder="Unidades de medida">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtPresentacion"><strong>Presentación:</strong></label>
+                <input class="form-control box" type="text" id="txtPresentacion" name="txtPresentacion"
+                    placeholder="Presentación">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtIndicaciones"><strong>Indicaciones:</strong></label>
+                <input class="form-control box" type="text" id="txtIndicaciones" name="txtIndicaciones"
+                    placeholder="Indicaciones">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtContraIndicaciones"><strong>Contra indicaciones:</strong></label>
+                <input class="form-control box" type="text" id="txtContraIndicaciones" name="txtContraIndicaciones"
+                    placeholder="Contra Indicaciones">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtConcentracion"><strong>Concentración:</strong></label>
+                <input class="form-control box" type="text" id="txtConcentracion" name="txtConcentracion"
+                    placeholder="Contra indicaciones">
+            </div>
+
+
+
+        </div>
+        <!-- Segunda columna -- Variables -->
+        <div class="col-md-6">
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtUnidadesEnEnvase"><strong>Unidades en envase:</strong></label>
+                <input class="form-control box" type="text" id="txtUnidadesEnEnvase" name="txtUnidadesEnEnvase"
+                    placeholder="Concentración">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtPrecioCompra"><strong>Precio de compra:</strong></label>
+                <input class="form-control box" type="text" id="txtPrecioCompra" name="txtPrecioCompra"
+                    placeholder="Unidades en envase">
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtPrecioVenta"><strong>Precio de venta:</strong></label>
+                <input class="form-control box" type="text" id="txtPrecioVenta" name="txtPrecioVenta"
+                    placeholder="Precio de compra">
+            </div>
+
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtCodigoBarras"><strong>Codigo de barras:</strong></label>
+                <input class="form-control box" type="text" id="txtCodigoBarras" name="txtCodigoBarras"
+                    placeholder="Código de barras" disabled>
+            </div>
+            <div class="row input-group mb-3">
+                <label class="mb-1" for="txtRutaFoto"><strong>Ruta de foto:</strong></label>
+                <form action="procesar.php" method="post" enctype="multipart/form-data">
+                    <input type="file" id="txtRutaFoto" name="txtRutaFoto">
+
+                </form>
+            </div><br><br> <br><br> <br><br> <br>
+            <div class="contenedorBotones">
+                <!-- Boton de AGREGAR -->
+                <button type="button" class="botonAgregar" onclick="cargarAgregarProductos()">Agregar </button>
+                <!-- Boton de CANCELAR -->
+            </div>
+            <div class="contenedorBotones">
+                <button type="button" class="botonCancelar" onclick="cancelarRegistro()">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div>
+    <p id="mensaje1"></p>
+</div>
