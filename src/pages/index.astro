@@ -2,11 +2,40 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import TypeScriptIcon from "../icons/TypeScript.astro";
+import SpringIcon from "../icons/Spring.astro";
+import PythonIcon from "../icons/Python.astro";
+import PHPIcon from "../icons/PHP.astro";
+import MySQLIcon from "../icons/MySQL.astro";
+import JavaScriptIcon from "../icons/JavaScript.astro";
+import JavaIcon from "../icons/Java.astro";
+import HTMLIcon from "../icons/HTML.astro";
+import GitIcon from "../icons/Git.astro";
+import DockerIcon from "../icons/Docker.astro";
+import CSSIcon from "../icons/CSS.astro";
+import ArduinoIcon from "../icons/Arduino.astro";
+import AppleIcon from "../icons/Apple.astro";
+import AndroidIcon from "../icons/Android.astro";
+import NodejsIcon from "../icons/Nodejs.astro";
+import JakartaIcon from "../icons/Jakarta.astro";
+import LinuxIcon from "../icons/Linux.astro";
+import ExpressIcon from "../icons/Express.astro";
+import BootstrapIcon from "../icons/Bootstrap.astro";
+import VueIcon from "../icons/Vue.astro";
+import MongoIcon from "../icons/Mongo.astro";
+import TailwindIcon from "../icons/Tailwind.astro";
+import WindowsIcon from "../icons/Windows.astro";
+import JavaFXIcon from "../icons/JavaFX.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Alejandro Delgado Cardona">
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <section class="w-full lg:w-[740px] mx-auto py-[20vh]">
+      <img
+        class="rounded-full w-[24vh] h-[24vh] mb-10 mx-auto"
+        src="https://avatars.githubusercontent.com/u/136514743?s=400&u=07348fcbfcd0ea6bbe3d3ab3e4fddbf4f6cadac5&v=4"
+        alt="Alejandro foto"
+      />
       <h1
         class="text-white text-5xl font-bold flex justify-center flex-row gap-x-2 pb-10"
       >
@@ -17,15 +46,71 @@ import Badge from "../components/Badge.astro";
           rel="noopener"
           class="flex justify-center items-center"
         >
-          <Badge>Estudiante de Ingeniería de Desarrollo de Software</Badge>
+          <Badge>
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </Badge>
         </a>
-        <h2 class="text-xl text-opacity-80">
-          2 años de experiencia, estudiante de Ingeniería de Desarrollo de
-          Software en la Universidad Tecnlógica de León 💚🦁. Me especializo en
-          el desarollo de soluciones tecnológicas utilizando tecnologías para el
-          desarrollo web y móvil.
+        <a
+          href="https://github.com/Pumpinator"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>
+            <i class="fa-brands fa-square-github fa-2xl"></i>
+          </Badge>
+        </a>
+        <a
+          href="https://www.instagram.com/alejandroel5/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>
+            <i class="fa-brands fa-square-instagram fa-2xl"></i>
+          </Badge>
+        </a>
+        <h2 class="text-2xl text-wrap pb-10">
+          <span>+ 2 años de experiencia.</span> Estudiante de
+          <span class="text-yellow-200/90"
+            >Ingeniería de Desarrollo de Software</span
+          > en la
+          <span class="text-green-100/90"
+            >Universidad Tecnlógica de León 💚🦁.</span
+          >
+          Me especializo en el desarollo de soluciones tecnológicas utilizando tecnologías
+          para el
+          <span class="text-purple-200/90 uppercase"
+            >desarrollo web y móvil</span
+          > 💻⚙️. Me encanta aprender y compartir conocimiento.
         </h2>
       </h1>
+      <div class="grid grid-cols-4 gap-4 justify-items-center">
+        <JavaIcon class="w-20 h-20" />
+        <PythonIcon class="w-20 h-20" />
+        <PHPIcon class="w-20 h-20" />
+        <ArduinoIcon class="w-20 h-20" />
+        <JakartaIcon class="w-20 h-20" />
+        <SpringIcon class="w-20 h-20" />
+        <MySQLIcon class="w-20 h-20" />
+        <MongoIcon class="w-20 h-20" />
+        <NodejsIcon class="w-20 h-20" />
+        <ExpressIcon class="w-20 h-20" />
+        <GitIcon class="w-20 h-20" />
+        <DockerIcon class="w-20 h-20" />
+        <HTMLIcon class="w-20 h-20" />
+        <CSSIcon class="w-20 h-20" />
+        <JavaScriptIcon class="w-20 h-20" />
+        <TypeScriptIcon class="w-20 h-20" />
+        <JavaFXIcon class="w-20 h-20" />
+        <VueIcon class="w-20 h-20" />
+        <BootstrapIcon class="w-20 h-20" />
+        <TailwindIcon class="w-20 h-20" />
+        <AndroidIcon class="w-20 h-20" />
+        <LinuxIcon class="w-20 h-20" />
+        <AppleIcon class="w-20 h-20" />
+        <WindowsIcon class="w-20 h-20" />
+      </div>
     </section>
   </main>
 </Layout>
