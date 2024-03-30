@@ -1,0 +1,51 @@
+---
+import ExperiencieItem from "./ExperiencieItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Marzo 2024 - Hoy",
+    title: "Metaphorce",
+    description:
+      "Proceso de Inteligencia y estadística para el reclutamiento en Tecnologías de la Información.",
+    link: "https://metaphorce.mx/en/",
+  },
+  {
+    date: "Febrero 2024 - Hoy",
+    title: "Codix Mx",
+    description:
+      "Mejorar la plataforma Rutax para facilitar la generación de pedidos, ventas y cobranzas, así como para proporcionar una solución móvil que permita a los agentes de ventas realizar estas tareas de manera eficiente.",
+    link: "https://codix.mx/",
+  },
+  {
+    date: "Septiembre 2022 - Hoy",
+    title: "Universidad Tecnológica de León",
+    description:
+      "Estoy cursando un título de Técnico Superior Universitario en Tecnologías de la Información área Desarrollo de Software Multiplataforma.",
+    link: "#",
+  },
+  {
+    date: "Diciembre 2021 - Mayo 2022",
+    title: "Instituto de Seguridad Social del Estado de Guanajuato",
+    description:
+      "Serví como auxiliar administrativo en el ISSEG, me encargué de apoyar en rendir informes y metas de manera mensual.",
+    link: "#",
+  },
+  {
+    date: "Agosto 2021",
+    title: "Heroica Escuela Naval Militar",
+    description:
+      "Causé baja en mi formación para oficial de la Armada de México como cadete en la Heroica Escuela Naval Militar por situaciones familiares.",
+    link: "#",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperiencieItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
 import TypeScriptIcon from "../icons/TypeScript.astro";
 import SpringIcon from "../icons/Spring.astro";
 import PythonIcon from "../icons/Python.astro";
@@ -26,91 +28,112 @@ import MongoIcon from "../icons/Mongo.astro";
 import TailwindIcon from "../icons/Tailwind.astro";
 import WindowsIcon from "../icons/Windows.astro";
 import JavaFXIcon from "../icons/JavaFX.astro";
+import Experience from "../components/Experience.astro";
 ---
 
-<Layout title="Alejandro Delgado Cardona">
+<Layout
+  title="Portafolio de Alejandro Delgado Cardona - Desarrollador e Ingeniero de Software"
+  description="Bienvenido al portafolio de Alejandro Delgado Cardona. Como desarrollador e ingeniero de software experimentado, Alejandro tiene una amplia gama de habilidades en tecnologías como Java, Python, Node.js y más. Explora sus proyectos, conoce su experiencia y descubre cómo puede ayudar a llevar tu proyecto al siguiente nivel."
+>
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-[20vh]">
+    <Section id="about" class="py-44 pb-24">
       <img
-        class="rounded-full w-[24vh] h-[24vh] mb-10 mx-auto"
+        class="rounded-full size-[24vh] mb-10 mx-auto"
         src="https://avatars.githubusercontent.com/u/136514743?s=400&u=07348fcbfcd0ea6bbe3d3ab3e4fddbf4f6cadac5&v=4"
         alt="Alejandro foto"
       />
       <h1
-        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-2 pb-10"
+        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-2 pb-10 uppercase"
       >
-        Alejandro Delgado Cardona
-        <a
-          href="https://www.linkedin.com/in/alejandrodcardona5/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>
-            <i class="fa-brands fa-linkedin fa-2xl"></i>
-          </Badge>
-        </a>
-        <a
-          href="https://github.com/Pumpinator"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>
-            <i class="fa-brands fa-square-github fa-2xl"></i>
-          </Badge>
-        </a>
-        <a
-          href="https://www.instagram.com/alejandroel5/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>
-            <i class="fa-brands fa-square-instagram fa-2xl"></i>
-          </Badge>
-        </a>
-        <h2 class="text-2xl text-wrap pb-10">
-          <span>+ 2 años de experiencia.</span> Estudiante de
-          <span class="text-yellow-200/90"
-            >Ingeniería de Desarrollo de Software</span
-          > en la
-          <span class="text-green-100/90"
-            >Universidad Tecnlógica de León 💚🦁.</span
-          >
-          Me especializo en el desarollo de soluciones tecnológicas utilizando tecnologías
-          para el
-          <span class="text-purple-200/90 uppercase"
-            >desarrollo web y móvil</span
-          > 💻⚙️. Me encanta aprender y compartir conocimiento.
-        </h2>
+        Hola, soy Alejandro Delgado Cardona!
+
+        <div class="flex justify-center items-center text-center">
+          <Badge> Desarrollador Fullstack 🚀</Badge>
+        </div>
       </h1>
-      <div class="grid grid-cols-4 gap-4 justify-items-center">
-        <JavaIcon class="w-20 h-20" />
-        <PythonIcon class="w-20 h-20" />
-        <PHPIcon class="w-20 h-20" />
-        <ArduinoIcon class="w-20 h-20" />
-        <JakartaIcon class="w-20 h-20" />
-        <SpringIcon class="w-20 h-20" />
-        <MySQLIcon class="w-20 h-20" />
-        <MongoIcon class="w-20 h-20" />
-        <NodejsIcon class="w-20 h-20" />
-        <ExpressIcon class="w-20 h-20" />
-        <GitIcon class="w-20 h-20" />
-        <DockerIcon class="w-20 h-20" />
-        <HTMLIcon class="w-20 h-20" />
-        <CSSIcon class="w-20 h-20" />
-        <JavaScriptIcon class="w-20 h-20" />
-        <TypeScriptIcon class="w-20 h-20" />
-        <JavaFXIcon class="w-20 h-20" />
-        <VueIcon class="w-20 h-20" />
-        <BootstrapIcon class="w-20 h-20" />
-        <TailwindIcon class="w-20 h-20" />
-        <AndroidIcon class="w-20 h-20" />
-        <LinuxIcon class="w-20 h-20" />
-        <AppleIcon class="w-20 h-20" />
-        <WindowsIcon class="w-20 h-20" />
+
+      <h2 class="text-2xl text-wrap pb-10">
+        <span>+ 2 años de experiencia.</span> Tengo 20 años y soy estudiante de
+        <span class="text-yellow-200/90"
+          >Ingeniería de Desarrollo de Software</span
+        > en la
+        <span class="text-green-100/90"
+          >Universidad Tecnlógica de León 💚🦁.</span
+        >
+        Me especializo en el desarollo de soluciones tecnológicas utilizando tecnologías
+        para el
+        <span class="text-purple-200/90 uppercase">desarrollo web y móvil</span>
+        💻⚙️. Me encanta aprender y compartir conocimiento.
+      </h2>
+
+      <nav class="flex gap-x-2">
+        <SocialPill href="https://www.linkedin.com/in/alejandrodcardona5/">
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </SocialPill>
+
+        <SocialPill href="https://github.com/Pumpinator">
+          <i class="fa-brands fa-square-github"></i>
+          GitHub
+        </SocialPill>
+
+        <SocialPill href="https://www.instagram.com/alejandroel5/">
+          <i class="fa-brands fa-square-instagram"></i>
+          Instagram
+        </SocialPill>
+
+        <SocialPill href='mailto:"alejandrodcardona5@gmail.com"'>
+          <i class="fa-solid fa-square-envelope"></i>
+          alejandrodcardona5@gmail.com
+        </SocialPill>
+      </nav>
+    </Section>
+
+    <Section id="experiencie" class="pt-10 pb-10">
+      <h2 class="text-2xl font-semibold mb-6">
+        <i class="fa-solid fa-suitcase"></i>
+        Experiencia
+      </h2>
+      <Experience />
+    </Section>
+
+    <Section id="skills" class="pt-10">
+      <h2 class="text-2xl font-semibold gap-x-3">
+        <i class="fa-solid fa-gear"></i>
+        Habilidades
+      </h2>
+      <div class="grid grid-cols-4 gap-4 justify-items-center pt-10">
+        <JavaIcon class="size-20" />
+        <PythonIcon class="size-20" />
+        <PHPIcon class="size-20" />
+        <ArduinoIcon class="size-20" />
+        <JakartaIcon class="size-20" />
+        <SpringIcon class="size-20" />
+        <MySQLIcon class="size-20" />
+        <MongoIcon class="size-20" />
+        <NodejsIcon class="size-20" />
+        <ExpressIcon class="size-20" />
+        <GitIcon class="size-20" />
+        <DockerIcon class="size-20" />
+        <HTMLIcon class="size-20" />
+        <CSSIcon class="size-20" />
+        <JavaScriptIcon class="size-20" />
+        <TypeScriptIcon class="size-20" />
+        <JavaFXIcon class="size-20" />
+        <VueIcon class="size-20" />
+        <BootstrapIcon class="size-20" />
+        <TailwindIcon class="size-20" />
+        <AndroidIcon class="size-20" />
+        <LinuxIcon class="size-20" />
+        <AppleIcon class="size-20" />
+        <WindowsIcon class="size-20" />
       </div>
-    </section>
+    </Section>
+    <Section id="projects" class="pt-10">
+      <h2 class="text-2xl font-semibold gap-x-3">
+        <i class="fa-solid fa-diagram-project"></i>
+        Proyectos
+      </h2>
+    </Section>
   </main>
 </Layout>
