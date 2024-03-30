@@ -1,10 +1,31 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-
-	</main>
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1
+        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-2 pb-10"
+      >
+        Alejandro Delgado Cardona
+        <a
+          href="https://www.linkedin.com/in/alejandrodcardona5/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Estudiante de Ingeniería de Desarrollo de Software</Badge>
+        </a>
+        <h2 class="text-xl text-opacity-80">
+          2 años de experiencia, estudiante de Ingeniería de Desarrollo de
+          Software en la Universidad Tecnlógica de León 💚🦁. Me especializo en
+          el desarollo de soluciones tecnológicas utilizando tecnologías para el
+          desarrollo web y móvil.
+        </h2>
+      </h1>
+    </section>
+  </main>
 </Layout>
