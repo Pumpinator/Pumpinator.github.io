@@ -34,6 +34,7 @@ const { title, description } = Astro.props;
 </html>
 <style is:global>
   :root {
+    --svg-color: #212121;
     color-scheme: light dark;
   }
 
@@ -41,14 +42,29 @@ const { title, description } = Astro.props;
     font-family: "DM Mono", monospace;
     scroll-behavior: smooth;
   }
-  
+
   body {
-    background: #1a1a1a;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
-  
+
+  @media (prefers-color-scheme: light) {
+    body {
+      background: #ffffff; /* Change this to your preferred light mode background color */
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --svg-color: #ffffff;
+    }
+
+    body {
+      background: #1a1a1a; /* Change this to your preferred dark mode background color */
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
