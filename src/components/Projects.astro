@@ -1,0 +1,51 @@
+---
+const PROJECTS = [
+  {
+    title: "Pecuadex",
+    description: "This is a description of project 1",
+    link: "https://www.google.com",
+    github: "#",
+    image: "https://via.placeholder.com/150",
+    tags: ["Java", "Spring Boot", "MySQL"],
+  },
+  {
+    title: "Sistema Central de Farmacias",
+    description: "This is a description of project 2",
+    link: "https://www.google.com",
+    github: "#",
+    image: "https://via.placeholder.com/150",
+    tags: ["Java", "JDBC", "MySQL"],
+  },
+  {
+    title: "Shop",
+    description: "This is a description of project 3",
+    link: "https://www.google.com",
+    github: "#",
+    image: "https://via.placeholder.com/150",
+    tags: ["Java", "Spring Boot", "MySQL"],
+  },
+  {
+    title: "Articulos",
+    description: "This is a description of project 4",
+    link: "https://www.google.com",
+    github: "#",
+    image: "https://via.placeholder.com/150",
+    tags: ["JavaScript", "Node.js", "Express.js", "MongoDB"],
+  },
+];
+---
+
+<div>
+  {PROJECTS.map(project => (
+      <h2>{project.title}</h2>
+      <p>{project.description}</p>
+      <a href={project.link}>Project Link</a>
+      <a href={project.github}>GitHub Link</a>
+      <img src={project.image} alt={project.title} />
+      <ul>
+        {project.tags.map(tag => (
+          <li>{tag}</li>
+        ))}
+      </ul>
+  ))}
+</div>

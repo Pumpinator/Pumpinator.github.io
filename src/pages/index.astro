@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
 import Section from "../components/Section.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
 import SocialPill from "../components/SocialPill.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+
 import TypeScriptIcon from "../icons/TypeScript.astro";
 import SpringIcon from "../icons/Spring.astro";
 import PythonIcon from "../icons/Python.astro";
@@ -28,22 +32,21 @@ import MongoIcon from "../icons/Mongo.astro";
 import TailwindIcon from "../icons/Tailwind.astro";
 import WindowsIcon from "../icons/Windows.astro";
 import JavaFXIcon from "../icons/JavaFX.astro";
-import Experience from "../components/Experience.astro";
 ---
 
 <Layout
-  title="Portafolio de Alejandro Delgado Cardona - Desarrollador e Ingeniero de Software"
+title="Portafolio de Alejandro Delgado Cardona - Desarrollador e Ingeniero de Software"
   description="Bienvenido al portafolio de Alejandro Delgado Cardona. Como desarrollador e ingeniero de software experimentado, Alejandro tiene una amplia gama de habilidades en tecnologías como Java, Python, Node.js y más. Explora sus proyectos, conoce su experiencia y descubre cómo puede ayudar a llevar tu proyecto al siguiente nivel."
 >
-  <main>
-    <Section id="about" class="py-44 pb-24">
+<main class="px-4">
+  <Section id="about" class="py-44 pb-24">
       <img
-        class="rounded-full size-[24vh] mb-10 mx-auto"
+        class="rounded-full size-[24vh] mb-4"
         src="https://avatars.githubusercontent.com/u/136514743?s=400&u=07348fcbfcd0ea6bbe3d3ab3e4fddbf4f6cadac5&v=4"
         alt="Alejandro foto"
       />
       <h1
-        class="text-5xl font-bold flex justify-center flex-row gap-x-2 pb-10 uppercase"
+        class="text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-2 pb-6 lg:pb-10 uppercase"
       >
         Hola, soy Alejandro Delgado Cardona!
 
@@ -52,7 +55,7 @@ import Experience from "../components/Experience.astro";
         </div>
       </h1>
 
-      <h2 class="text-2xl text-wrap pb-10">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span>+ 2 años de experiencia.</span> Tengo 20 años y soy estudiante de
         <span class="text-yellow-300/90 uppercase"
           >Ingeniería de Desarrollo de Software</span
@@ -66,24 +69,24 @@ import Experience from "../components/Experience.astro";
         💻⚙️. Me encanta aprender y compartir conocimiento.
       </h2>
 
-      <nav class="flex gap-x-2">
+      <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/alejandrodcardona5/">
-          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-linkedin size:4 md:size-6"></i>
           LinkedIn
         </SocialPill>
 
         <SocialPill href="https://github.com/Pumpinator">
-          <i class="fa-brands fa-square-github"></i>
+          <i class="fa-brands fa-square-github size:4 md:size-6"></i>
           GitHub
         </SocialPill>
 
         <SocialPill href="https://www.instagram.com/alejandroel5/">
-          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-instagram size:4 md:size-6"></i>
           Instagram
         </SocialPill>
 
         <SocialPill href='mailto:"alejandrodcardona5@gmail.com"'>
-          <i class="fa-solid fa-square-envelope"></i>
+          <i class="fa-solid fa-square-envelope size:4 md:size-6"></i>
           alejandrodcardona5@gmail.com
         </SocialPill>
       </nav>
@@ -99,7 +102,7 @@ import Experience from "../components/Experience.astro";
 
     <Section id="skills" class="pt-10">
       <h2 class="text-2xl font-semibold gap-x-3">
-        <i class="fa-solid fa-gear"></i>
+        <i class="fa-solid fa-code"></i>
         Habilidades
       </h2>
       <div class="grid grid-cols-4 gap-4 justify-items-center pt-10">
@@ -131,9 +134,10 @@ import Experience from "../components/Experience.astro";
     </Section>
     <Section id="projects" class="pt-10">
       <h2 class="text-2xl font-semibold gap-x-3">
-        <i class="fa-solid fa-diagram-project"></i>
+        <i class="fa-solid fa-gear"></i>
         Proyectos
       </h2>
+      <Projects />
     </Section>
   </main>
 </Layout>
