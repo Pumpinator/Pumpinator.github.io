@@ -1,6 +1,6 @@
 # 👋 Hola, soy Alejandro Delgado Cardona! 🚀
 
-![Profile Picture](./img/alejandro.jpeg)
+![Profile Picture](/public/img/alejandro.jpeg)
 
 Soy un desarrollador e ingeniero de software experimentado con una amplia gama de habilidades en tecnologías como Java, Python, Node.js y más. 
 
